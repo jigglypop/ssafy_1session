@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #ssafy > p:nth-child(2) {
+      /* child의 2번째 p */
+      color: red;
+    }
+    #ssafy1 > p:nth-of-type(2) {
+      /* 2번째 p */
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div id="ssafy">
+    <h2>어떻게 선택될까?</h2>
+    <p>첫번째 단락</p>
+    <p>두번째 단락</p>
+    <p>세번째 단락</p>
+  </div>
+
+  <div id="ssafy1">
+    <h2>어떻게 선택될까?</h2>
+    <p>첫번째 단락</p>
+    <p>두번째 단락</p>
+    <p>세번째 단락</p>
+  </div>
+  
+</body>
+</html>
+
+<!-- 첫번째 부분은 첫번째 단락만 빨간색 -->
+<!-- 두번째 부분은 두번째 단락만 파란색 -->

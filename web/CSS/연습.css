@@ -1,0 +1,63 @@
+
+.p > li {
+    color:red;
+}
+
+.q  li {
+    color:blue;
+}
+
+.div-vmin {
+    width: 10vmin;
+    height: 10vmin;
+    background-color:red;
+}
+
+.div-vw {
+    width: 100vw;
+    height: 100vw;
+    background-color:blue;
+}
+
+.m {
+    margin: 10px;
+}
+
+.m1 {
+    margin: 20px 100px 20px 10px;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.mx-auto {
+    margin: auto;
+}
+
+.inline {
+    display: inline;
+}
+.block {
+    display: block;
+}
+.inline-block {
+    display: inline-block;
+}
+
+.header {
+    height: 1000px;
+    background-size: contain;
+    background-position-y: bottom;
+    background-image: url("image/ig.jpg")
+}
+
+
+
+
+
+
+
+
+
+

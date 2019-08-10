@@ -16,10 +16,17 @@
     li : 2rem -> 32px (16*2)
   -->
   <ol>
-    <li>2rem</li>
+    <li>2rem(16px기준 2배)</li>
+    <ol>
+      <li>2rem(불변)</li>
+    </ol>    
   </ol>
   <ul>
-    <li>2em</li>
+    <li>2em(위의 요소의 2배)</li>
+    <ul>
+      <li>2em(상위요소의 2배가됨)</li>
+    </ul>
+  </ul>
     <!-- em
       상위 요소의 배수
       html : 16px
@@ -27,15 +34,15 @@
       li : 원래 ul 밑에 있어서 32px
           2em -> 32px*2 -> 64px
      -->
-  </ul>
+  
   <!-- vw, vh -->
   <!-- vh 요소는 높이값의 100분의 1의 단위 -->
+  <!-- vh & vw (vertical height & vertical width) -->
   <span class="vw">10vw</span>
-  <span class="vh">10vw</span>
-  <div class="div-vw"></div>
-  <div class="div-vh"></div>
-  <!-- vmin -->
-  <div class="div-vmin">10vmin</div>
-  
+  <span class="vh">10vh</span>
+  <div class="div-vw">10vw</div>
+  <div class="div-vh">10vh</div>
+  <!-- vmin (둘다)-->
+  <div class="div-vmin">10vmin</div>  
 </body>
 </html>
