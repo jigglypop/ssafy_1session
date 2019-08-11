@@ -7,29 +7,22 @@
   <title>Document</title>
 </head>
 <body>
-  <table border="2px solid black">
-    <caption>유성 식단</caption>
-    <tr>
-      <th></th>
-      <th>월</th>
-      <th>화</th>
-      <th>수</th>
-    </tr>
-    <tr>
-      <td>A코스</td>
-      <td rowspan=2>짬뽕</td>
-      <td colspan=2>초밥</td>
-    </tr>
-    <tr>
-      <td>B코스</td>
-      <td>김치찌개</td>
-      <td>삼계탕</td>
-    </tr>
-    <tr>
-      <td>식수</td>
-      <td colspan=3>총 150명 식사</td>
-    </tr>
-  </table>
+  <form action=""method="get">
+    <label for="text">이름: </label>
+    <input id="text" type="text" placeholder="이름입력">
+    <label for="date">날짜: </label>
+    <input id="date" type="date" name="date"><br>
+    <input type="radio" name="1" value="1">1<br>
+    <input type="radio" name="1" value="2">2<br>
+    <input type="radio" name="1" value="3">3<br>
+    <input type="radio" name="1" value="4">4<br>
+    <hr>
+    <input type="checkbox" name="1" value="4">4<br>
+    <input type="checkbox" name="2" value="4">4<br>
+    <input type="checkbox" name="3" value="4">4<br>
+    <input type="checkbox" name="4" value="4">4<br>
+  </form>
+  
 
 </body>
 </html>
