@@ -13,12 +13,9 @@ def perm(k, n):
 
     for i in range(n):
         if used[i]: continue
-
         used[i] = True
         order.append(arr[i])
-
         perm(k + 1, n)
-
         used[i] = False
         order.pop()
 

@@ -5,13 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+
+  <style>
+    body {
+      height: 10000px;
+    }
+    #python {
+      height: 5000px;
+    }
+    div{
+      height:5000px;
+    }   
+    #web {
+    height: 5000px;
+  }
+  </style>
 </head>
 <body>
+  <a href="#python">
+    <img src="images/python.png" alt="python" width="100px" height="100px">
+  </a>
+  <a href="#web">
+      <img src="images/html.png" alt="HTML" width="100px" height="100px">
+  </a>
   <form action=""method="get">
+
     <label for="text">이름: </label>
     <input id="text" type="text" placeholder="이름입력">
     <label for="date">날짜: </label>
     <input id="date" type="date" name="date"><br>
+
     <input type="radio" name="1" value="1">1<br>
     <input type="radio" name="1" value="2">2<br>
     <input type="radio" name="1" value="3">3<br>
@@ -21,7 +44,16 @@
     <input type="checkbox" name="2" value="4">4<br>
     <input type="checkbox" name="3" value="4">4<br>
     <input type="checkbox" name="4" value="4">4<br>
+    <input type="button" value="youtube" onclick="window.open('https://www.youtube.com')">
   </form>
+  
+  <section id="python" class="python">
+    <p>여기서부터 파이썬</p>
+  </section>
+  <section id="web" class="web">
+    <p>여기서부터 웹</p>
+  </section>
+  <input type="submit">
   
 
 </body>

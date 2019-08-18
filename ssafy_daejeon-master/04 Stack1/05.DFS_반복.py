@@ -1,5 +1,4 @@
 def DFS(v):
-
     stack = []
     stack.append(v)
     visit[v] = True
@@ -12,6 +11,7 @@ def DFS(v):
                 stack.append(w)
                 v = w
                 visit[w] = True
+                print(stack)
                 print(v, end=" ")
                 break
         if prev == v:

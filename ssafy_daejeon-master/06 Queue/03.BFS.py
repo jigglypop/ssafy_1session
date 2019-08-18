@@ -33,7 +33,5 @@ for i in range(E):
     G[u].append(v)
     G[v].append(u)
 
-
 D = BFS(1, G)
-
 print(D[1:])

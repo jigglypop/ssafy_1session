@@ -4,7 +4,7 @@
   background-image: url('ig.jpg'); 
    /* 이미지 크기
    -> 부족한 부분은 바둑판 형식 배치
-   background-size: 300px 500px;
+   
    */
    /* cover :
    배경이미지 크기의 비율을 고정
@@ -21,10 +21,12 @@
    값 하나만 지정하면, width지정+height: auto  
    */
    /* background-size: cover;
-   background-repeat: no-repeat;
+   
    background-position: center; */
-   background-size: cover;
-   background-position-y: bottom;
+   background-size: 100px 500px;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position-x: center;
    /* positon을 bottom 위주로 가능 */
    
 

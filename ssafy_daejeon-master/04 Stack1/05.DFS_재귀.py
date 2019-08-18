@@ -1,8 +1,6 @@
 def DFS(v):
     visit[v] = True
-
-    print(v, end=" ")
-    
+    print(v, end=" ")    
     for w in G[v]:
         if not visit[w]:
             DFS(w)
@@ -19,5 +17,17 @@ for i in range(E):
     u, v = map(int, input().split())
     G[u].append(v)
     G[v].append(u)
-
 DFS(1)
+
+
+#------------------------------------------------
+
+# def DFS(v):
+
+# import sys
+# sys.stdin = open("DFS_input.txt", "r")
+
+# V, E
+
+
+# DFS(1)
