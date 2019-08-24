@@ -24,6 +24,7 @@ for i in range(n - m + 1):
             print(i, t[i:])
             break
 
+
     if i == n - m: break
     th = ((th - ord(t[i]) * h0) * 10 + ord(t[i + m])) % 997
     if th < 0: th += 997
