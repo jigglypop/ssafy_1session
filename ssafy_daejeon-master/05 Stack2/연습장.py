@@ -1,12 +1,15 @@
-def exp(x,n):
-    if n <= 1:
-        return x**n
-    if n & 1:
-        return exp(x,(n-1)//2) * exp(x,(n-1)//2) * x
-    else:
-        return exp(x,n//2) ** 2
+# arr = "ABCD"
+# order = []      # 순열 저장
+# cnt = 1
 
-print(exp(10,0))
-print(exp(10,1))
-print(exp(10,10))
-print(exp(10,9))
+# def perm(k,n,used):
+#     if k == n:
+#         global cnt
+#         print("%2d> %s")
+#         cnt += 1
+#         return 
+#     for i in range(n):
+#         if used & (1<<i):continue
+
+print(10 | (1<<0))
+        
