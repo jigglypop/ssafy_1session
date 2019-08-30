@@ -1,15 +1,22 @@
-# arr = "ABCD"
-# order = []      # 순열 저장
-# cnt = 1
+import pprint
 
-# def perm(k,n,used):
-#     if k == n:
-#         global cnt
-#         print("%2d> %s")
-#         cnt += 1
-#         return 
-#     for i in range(n):
-#         if used & (1<<i):continue
+N = 7
+v = [[0]*N for _ in range(N)]
 
-print(10 | (1<<0))
+Y, X = len(v), len(v[0])
+n = 0
+for i in range(0,Y+X-1):
+    x = 0 if i < X else (i - X + 1)
+    y = i if i < X else X - 1
+    while x < X and y > 0:
+        x += 1
+        y -= 1
+        n += 1
+        print(x,y)
+        v[y][x] = n
+
+pprint.pprint(v)
+
+
+
         

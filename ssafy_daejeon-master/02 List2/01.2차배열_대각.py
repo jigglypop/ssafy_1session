@@ -20,8 +20,6 @@ for diag in range(0, N + M - 1):    # diag: 사선의 수 # x, y: 시작 좌표
     print()
 
 
-
-
 # 1. 행 우선순회
 # for y in range(len(arr)):
 #     for x in range(len(arr[0])):
